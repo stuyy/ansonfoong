@@ -1,0 +1,51 @@
+.homesection {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 200px 0;
+  & h2 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 28px;
+  }
+}
+
+.home-side-section {
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 275px;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 4px 40px;
+  & h3 {
+    font-weight: normal;
+  }
+}
+
+.button-github {
+  background-color: #303030;
+}
+
+.button-linkedin {
+  background-color: #0057a8;
+  margin-top: 10px;
+}
+
+.maintitle {
+  width: 350px;
+}
+
+.learnmore {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #fff;
+  padding: 5px 0;
+  width: 275px;
+  margin-top: 20px;
+}
