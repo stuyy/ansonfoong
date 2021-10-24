@@ -1,17 +1,13 @@
 .homesection {
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 200px 0;
+  padding: 250px 0;
   & h2 {
     margin: 0;
     font-weight: 300;
     font-size: 28px;
   }
-}
-
-.home-side-section {
 }
 
 .button {
@@ -47,5 +43,5 @@
   border: 1px solid #fff;
   padding: 5px 0;
   width: 275px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
