@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   & img {
-    width: 175px;
+    max-width: 175px;
+    max-height: 175px;
     border-radius: 10px;
   }
 }
@@ -21,6 +22,11 @@
   justify-content: space-between;
   width: 100%;
   margin-right: 20px;
+}
+
+.container-body-reverse {
+  margin-right: 0;
+  margin-left: 20px;
 }
 
 .project-container-content {
