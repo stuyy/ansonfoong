@@ -2,9 +2,11 @@ import { GetStaticPathsResult, GetStaticPropsContext, NextPage } from "next";
 import { projects } from "../../../utils/projects";
 import { Project } from "../../../utils/types";
 import styles from "../projects-page.module.scss";
+
 type ProjectProps = {
   project: Project;
 };
+
 const ProjectPage: NextPage<ProjectProps> = ({ project }) => {
   return (
     <div className="page">
