@@ -11,6 +11,10 @@
   }
 }
 
+.project-container-reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
 .project-container-body {
   display: flex;
   flex-direction: column;

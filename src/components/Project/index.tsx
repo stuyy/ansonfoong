@@ -6,11 +6,20 @@ export type ProjectComponentProps = {
   title: string;
   description: string;
   src: string;
+  reverse?: boolean;
 };
 
-export const Project = ({ title, description, src }: ProjectComponentProps) => {
+export const Project = ({
+  title,
+  description,
+  src,
+  reverse,
+}: ProjectComponentProps) => {
+  const containerStyles = `${styles["project-container"]} ${
+    reverse && styles["project-container-reverse"]
+  }`;
   return (
-    <div className={styles["project-container"]}>
+    <div className={containerStyles}>
       <div className={styles["project-container-body"]}>
         <div className={styles["project-container-content"]}>
           <h2>{title}</h2>
