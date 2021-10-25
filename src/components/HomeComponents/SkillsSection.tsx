@@ -2,6 +2,7 @@ import { ProgressBar } from "../ProgressBar";
 import styles from "./SkillsSection.module.scss";
 import { FaJava, FaNodeJs, FaReact } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
+import { skills } from "../../utils/constants";
 
 export const SkillsSection = () => {
   const { ref, inView } = useInView({
@@ -11,41 +12,16 @@ export const SkillsSection = () => {
   return (
     <div className={styles["skills-section"]}>
       <h2>Skills</h2>
-      <div className={styles["skills-content-container"]}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
-          <div style={{ textAlign: "center" }}>
-            <span>
-              <FaJava size={50} color="#f89820" />
-            </span>
-            <p>Java</p>
+      <div className={styles["skills-content-container"]} ref={ref}>
+        {skills.map(({ name, Icon, color, progress }) => (
+          <div className={styles["skills-flex-item"]}>
+            <div style={{ textAlign: "center", minWidth: "100px" }}>
+              <Icon size={50} color={color} />
+              <p>{name}</p>
+            </div>
+            <ProgressBar progress={progress} color={color} animate={inView} />
           </div>
-          <ProgressBar
-            progress={90}
-            color="#f89820"
-            spacing="50px"
-            animate={inView}
-          />
-        </div>
-        <div className={styles["skills-flex-item"]} ref={ref}>
-          <div style={{ textAlign: "center" }}>
-            <span>
-              <FaNodeJs size={50} color="#3c873a" />
-            </span>
-            <p>NodeJS</p>
-          </div>
-          <ProgressBar
-            progress={80}
-            color="#3c873a"
-            spacing="50px"
-            animate={inView}
-          />
-        </div>
+        ))}
       </div>
     </div>
   );
