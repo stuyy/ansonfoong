@@ -1,6 +1,6 @@
 import Link from "next/link";
+import { routes } from "../../utils/constants";
 import styles from "./index.module.scss";
-import { routes } from "../../utils/routes";
 
 export const Navigation = () => (
   <header className={styles.header}>

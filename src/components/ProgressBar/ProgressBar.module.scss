@@ -1,0 +1,20 @@
+.progress-bar-container {
+  height: 20px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #171717;
+  border: 1px solid rgba(59, 59, 59, 0.829);
+  margin: 0 25px;
+}
+
+.progress-bar-indicator {
+  height: 100%;
+  border-radius: inherit;
+  transition: 2.5s width ease-in;
+  display: flex;
+  align-items: center;
+  color: #171717;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
