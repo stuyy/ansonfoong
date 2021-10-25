@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Project } from "../../components/Project";
+import { ProjectListing } from "../../components/Project";
 import { projects } from "../../utils/projects";
 import styles from "./projects-page.module.scss";
 
@@ -12,7 +12,7 @@ const ProjectsPage: NextPage = () => {
         </div>
         <div className={styles["projects-content"]}>
           {projects.map((project) => (
-            <Project {...project} />
+            <ProjectListing project={project} />
           ))}
         </div>
       </div>

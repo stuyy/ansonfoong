@@ -1,22 +1,15 @@
 import styles from "./project.module.scss";
 import { Button } from "../Button";
 import { useRouter } from "next/dist/client/router";
+import { Project } from "../../utils/types";
 
 export type ProjectComponentProps = {
-  title: string;
-  description: string;
-  src: string;
-  reverse?: boolean;
-  pathname: string;
+  project: Project;
 };
 
-export const Project = ({
-  title,
-  description,
-  src,
-  reverse,
-  pathname,
-}: ProjectComponentProps) => {
+export const ProjectListing = ({ project }: ProjectComponentProps) => {
+  const { title, description, src, reverse, pathname } = project;
+
   const router = useRouter();
   const containerStyles = `${styles["project-container"]} ${
     reverse && styles["project-container-reverse"]

@@ -1,5 +1,6 @@
 import { GetStaticPathsResult, GetStaticPropsContext, NextPage } from "next";
-import { Project, projects } from "../../../utils/projects";
+import { projects } from "../../../utils/projects";
+import { Project } from "../../../utils/types";
 import styles from "../projects-page.module.scss";
 type ProjectProps = {
   project: Project;
@@ -17,10 +18,10 @@ const ProjectPage: NextPage<ProjectProps> = ({ project }) => {
 };
 
 export async function getStaticProps(
-  context: GetStaticPropsContext<{ project: string }>
+  context: GetStaticPropsContext<{ name: string }>
 ) {
   console.log(context);
-  const project = projects.find((p) => p.pathname === context.params?.project);
+  const project = projects.find((p) => p.pathname === context.params?.name);
   return {
     props: { project },
   };
@@ -28,7 +29,7 @@ export async function getStaticProps(
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
   const paths = projects.map((project) => ({
-    params: { project: project.pathname },
+    params: { name: project.pathname },
   }));
   return { paths, fallback: false };
 }

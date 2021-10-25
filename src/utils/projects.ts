@@ -1,14 +1,4 @@
-export type Project = {
-  id: number;
-  title: string;
-  description: string;
-  src: string;
-  pathname: string;
-  technologies: string[];
-  reverse?: boolean;
-  github?: string;
-  website?: string;
-};
+import { Project } from "./types";
 
 export const projects: Project[] = [
   {
@@ -38,5 +28,15 @@ export const projects: Project[] = [
     src: "/me.png",
     pathname: "codering.io",
     technologies: ["Angular", "Express.js", "MongoDB"],
+  },
+  {
+    id: 4,
+    title: "AMEX Growth Hack",
+    description:
+      "A mobile app built with Flutter to promote minority-owned businesses & small businesses to bring more competition for AMEX merchants. The project was inspired by AMEX's company theme to promote social equity by designing & building a platform promoting AMEX merchants that fell into a minority-owned business, or a small business. Features push notifications from Google Firebase to notify consumers.",
+    src: "/me.png",
+    pathname: "amex-growth-hack",
+    technologies: ["Flutter", "Express"],
+    reverse: true,
   },
 ];
