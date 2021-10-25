@@ -1,0 +1,29 @@
+.about-section {
+  border-top: 1px solid rgba(202, 202, 202, 0.062);
+  padding: 150px 0;
+  & h2 {
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.about-content-container {
+  width: 1150px;
+  margin: 0 auto;
+  & img {
+    border: 5px solid #fff !important;
+  }
+  display: flex;
+  margin-top: 30px;
+}
+
+.about-content-paragraph {
+  width: 100%;
+  margin-left: 30px;
+  & p {
+    margin: 0;
+    font-size: 18px;
+  }
+}

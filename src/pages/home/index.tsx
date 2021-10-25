@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import { AboutSection } from "../../components/HomeComponents/AboutSection";
 import { HomeSection } from "../../components/HomeComponents/HomeSection";
 
 const HomePage: NextPage = () => {
@@ -6,6 +7,7 @@ const HomePage: NextPage = () => {
     <div className="page">
       <div className="home-page-body">
         <HomeSection />
+        <AboutSection />
       </div>
     </div>
   );

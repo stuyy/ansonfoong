@@ -10,7 +10,7 @@ export const routes: Route[] = [
   },
   {
     name: "projects",
-    path: "/home",
+    path: "/projects",
   },
   {
     name: "courses",
