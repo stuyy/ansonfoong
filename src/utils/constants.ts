@@ -5,7 +5,7 @@ import {
   FaNodeJs,
   FaReact,
 } from "react-icons/fa";
-import { SiMongodb, SiMysql, SiSpring } from "react-icons/si";
+import { SiMongodb, SiMysql, SiSpring, SiGraphql } from "react-icons/si";
 import { Route, Skill } from "./types";
 
 export const routes: Route[] = [
@@ -57,9 +57,15 @@ export const skills: Skill[] = [
     color: "#61DBFB",
   },
   {
+    name: "GraphQL",
+    Icon: SiGraphql,
+    progress: 80,
+    color: "#E10098",
+  },
+  {
     name: "Angular",
     Icon: FaAngular,
-    progress: 70,
+    progress: 75,
     color: "#dd1b16",
   },
   {

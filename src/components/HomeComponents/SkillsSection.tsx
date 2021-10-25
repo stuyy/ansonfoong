@@ -8,6 +8,7 @@ export const SkillsSection = () => {
   const { ref, inView } = useInView({
     threshold: 0,
     rootMargin: "50px",
+    triggerOnce: true,
   });
   return (
     <div className={styles["skills-section"]}>
