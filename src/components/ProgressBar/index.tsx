@@ -4,9 +4,15 @@ export type ProgressBarProps = {
   spacing?: string;
   color: string;
   progress: number;
+  animate: boolean;
 };
 
-export const ProgressBar = ({ spacing, color, progress }: ProgressBarProps) => (
+export const ProgressBar = ({
+  spacing,
+  color,
+  progress,
+  animate,
+}: ProgressBarProps) => (
   <div
     className={styles["progress-bar-container"]}
     style={{
@@ -16,7 +22,7 @@ export const ProgressBar = ({ spacing, color, progress }: ProgressBarProps) => (
     <div
       className={styles["progress-bar-indicator"]}
       style={{
-        width: `${progress}%`,
+        width: animate ? `${progress}%` : "0%",
         backgroundColor: color,
       }}
     ></div>
