@@ -12,6 +12,13 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,11 +29,11 @@ a {
 
 .page {
   min-height: calc(100% - 143px);
-  background-color: #202020;
+  background-color: #171717;
   color: #fff;
 }
 
-.home-page-body {
+.page-body {
   width: 100%;
   padding: 0 150px;
   margin: 0 auto;

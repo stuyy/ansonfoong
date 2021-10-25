@@ -1,0 +1,40 @@
+.project-container {
+  width: 100%;
+  background-color: #232323;
+  border-radius: 10px;
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+  & img {
+    width: 175px;
+    border-radius: 10px;
+  }
+}
+
+.project-container-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.project-container-content {
+  width: 100%;
+  & h2 {
+    font-weight: normal;
+  }
+  & p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+.project-container-title {
+}
+
+.project-container-description {
+}
+
+.project-container-buttons {
+}

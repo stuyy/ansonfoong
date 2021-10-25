@@ -1,0 +1,15 @@
+.projects-page-body {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.title-container {
+  padding: 50px 0;
+  & h1 {
+    font-weight: 500;
+    font-size: 26px;
+  }
+}
+
+.projects-content {
+}
