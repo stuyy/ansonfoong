@@ -1,0 +1,45 @@
+.button {
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Noto Sans";
+  transition: 100ms background-color linear, 100ms border linear;
+  &:focus {
+    border: 1px solid #fff;
+  }
+}
+
+.button--primary {
+  background-color: #0057a8;
+  color: #fff;
+  border: 1px solid #0057a8;
+  &:hover {
+    background-color: #0084ff;
+    border: 1px solid #0084ff;
+  }
+}
+
+.button--secondary {
+  background-color: #151515;
+  border: 1px solid #151515;
+  color: #fff;
+  &:hover {
+    background-color: #2e2e2e;
+    border: 1px solid #2e2e2e;
+  }
+}
+
+.button--sm {
+  padding: 10px 26px;
+  font-size: 14px;
+}
+
+.button--md {
+  font-size: 15px;
+  padding: 12px 35px;
+}
+
+.button--lg {
+  font-size: 16px;
+  padding: 14px 40px;
+}

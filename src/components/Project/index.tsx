@@ -1,5 +1,6 @@
 import styles from "./project.module.scss";
 import Image from "next/image";
+import { Button } from "../Button";
 
 export type ProjectComponentProps = {
   title: string;
@@ -16,7 +17,7 @@ export const Project = ({ title, description, src }: ProjectComponentProps) => {
           <p>{description}</p>
         </div>
         <div>
-          <button>GitHub</button>
+          <Button label="GitHub" variant="secondary" />
         </div>
       </div>
       <div>
