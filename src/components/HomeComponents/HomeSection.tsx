@@ -5,7 +5,7 @@ import { VscGithub } from "react-icons/vsc";
 
 export const HomeSection = () => {
   return (
-    <div className={styles.homesection}>
+    <div className={styles["home-section"]}>
       <section className={styles["home-side-section"]}>
         <div className={styles.maintitle}>
           <h2>Leveling programmers up with quality tutorials</h2>
