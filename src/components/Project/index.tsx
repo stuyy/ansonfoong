@@ -2,6 +2,7 @@ import styles from "./project.module.scss";
 import { Button } from "../Button";
 import { useRouter } from "next/dist/client/router";
 import { Project } from "../../utils/types";
+import Image from "next/image";
 
 export type ProjectComponentProps = {
   project: Project;
@@ -26,7 +27,7 @@ export const ProjectListing = ({ project }: ProjectComponentProps) => {
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
-        <div>
+        <div className={styles["project-buttons"]}>
           <Button
             label="GitHub"
             variant="secondary"
@@ -40,7 +41,7 @@ export const ProjectListing = ({ project }: ProjectComponentProps) => {
         </div>
       </div>
       <div>
-        <img src={src} alt={src} />
+        <Image src={src} alt={src} width="175px" height="175px" />
       </div>
     </div>
   );
