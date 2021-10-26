@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { GetStaticPathsResult, GetStaticPropsContext, NextPage } from "next";
 import { Button } from "../../../components/Button";
 import { projects } from "../../../utils/projects";
@@ -8,25 +9,31 @@ type ProjectProps = {
 };
 const ProjectListingPage: NextPage<ProjectProps> = ({ project }) => {
   return (
-    <div className="page">
-      <div className={styles["project-listing-body"]}>
-        <div className={styles["project-listing-title-container"]}>
-          <h1>{project.title}</h1>
+    <>
+      <Head>
+        <title>{project.title}</title>
+        <meta property="og:title" content={project.title} key="title" />
+      </Head>
+      <div className="page">
+        <div className={styles["project-listing-body"]}>
+          <div className={styles["project-listing-title-container"]}>
+            <h1>{project.title}</h1>
+          </div>
+          <div className={styles["project-listing-contents"]}>
+            <p>{project.description}</p>
+            <h3>Technologies</h3>
+            <ul>
+              {project.technologies.map((value) => (
+                <li>{value}</li>
+              ))}
+            </ul>
+          </div>
+          <footer className={styles["project-listing-footer"]}>
+            <Button label="View On GitHub" size="md" variant="secondary" />
+          </footer>
         </div>
-        <div className={styles["project-listing-contents"]}>
-          <p>{project.description}</p>
-          <h3>Technologies</h3>
-          <ul>
-            {project.technologies.map((value) => (
-              <li>{value}</li>
-            ))}
-          </ul>
-        </div>
-        <footer className={styles["project-listing-footer"]}>
-          <Button label="View On GitHub" size="md" variant="secondary" />
-        </footer>
       </div>
-    </div>
+    </>
   );
 };
 
