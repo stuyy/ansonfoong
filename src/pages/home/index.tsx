@@ -23,6 +23,20 @@ const HomePage: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta name="theme-color" content="#ff4d00"></meta>
       </Head>
+      <header
+        style={{
+          position: "absolute",
+          top: 0,
+          width: "100%",
+          backgroundColor: "#202020",
+          color: "#fff",
+          fontSize: "14px",
+          textAlign: "center",
+          padding: "8px 0",
+        }}
+      >
+        <span>This website is still in development.</span>
+      </header>
       <div className="page">
         <div className="page-body">
           <HomeSection ref={ref} />

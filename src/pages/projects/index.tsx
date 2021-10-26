@@ -14,6 +14,10 @@ const ProjectsPage: NextPage = () => {
           content="Anson Foong's Projects"
           key="title"
         />
+        <meta
+          property="og:description"
+          content="List of all of Anson Foong's Programming Projects"
+        />
       </Head>
       <div className="page">
         <div className={styles["projects-page-body"]}>
