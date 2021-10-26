@@ -3,6 +3,8 @@ import { IconType } from "react-icons";
 export type ButtonVariant = "primary" | "secondary";
 export type Size = "sm" | "md" | "lg";
 
+export type SocialMediaLinkType = "discord" | "github" | "linkedin" | "youtube";
+
 export type Route = {
   name: string;
   path: string;

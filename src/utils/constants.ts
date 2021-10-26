@@ -87,3 +87,10 @@ export const skills: Skill[] = [
     color: "#6eff61",
   },
 ];
+
+export const SOCIAL_LINKS = {
+  github: "https://github.com/stuyy",
+  linkedin: "https://linkedin.com/in/ansonfoong",
+  discord: "https://discord.com/invite/",
+  youtube: "https://youtube.com/ansonthedeveloper",
+};
