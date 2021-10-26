@@ -17,18 +17,18 @@ export const routes: Route[] = [
     name: "projects",
     path: "/projects",
   },
-  {
-    name: "courses",
-    path: "/courses",
-  },
-  {
-    name: "blog",
-    path: "/blog",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
+  // {
+  //   name: "courses",
+  //   path: "/courses",
+  // },
+  // {
+  //   name: "blog",
+  //   path: "/blog",
+  // },
+  // {
+  //   name: "contact",
+  //   path: "/contact",
+  // },
 ];
 
 export const skills: Skill[] = [
