@@ -7,7 +7,7 @@ export const AboutSection = React.forwardRef<HTMLDivElement>((props, ref) => {
     <div className={styles["about-section"]} ref={ref}>
       <h2>Hello! I’m Anson. I’m a Software Engineer & Content Creator.</h2>
       <div className={styles["about-content-container"]}>
-        <Image src="/me.png" width={200} height={200} />
+        <Image src="/me.png" width={200} height={200} alt="me.png" />
         <div className={styles["about-content-paragraph"]}>
           <p>
             I currently work as a Software Engineer. My go-to stack is React,

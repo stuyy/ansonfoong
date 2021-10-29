@@ -11,14 +11,22 @@ const HomePage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>ansonfoong.io</title>
+        <title>Anson Foong</title>
         <meta property="og:site_name" content="Anson Foong Portfolio Website" />
         <meta property="og:title" content="Anson Foong" key="title" />
         <meta property="og:image" content="/me.png" />
         <meta property="og:url" content="https://ansonfoong.io" />
         <meta
           property="og:description"
-          content="Anson Foong's Portfolio Website"
+          content="Software Developer, Programming Educator, & Content Creator. Learn more about Anson Foong and his Development journey & experience."
+        />
+        <meta
+          name="description"
+          content="Software Developer, Programming Educator, & Content Creator. Learn more about Anson Foong and his Development journey & experience."
+        />
+        <meta
+          name="keywords"
+          content="Software Developer, React, Angular, Anson Foong, Anson The Developer"
         />
         <meta property="og:type" content="website" />
         <meta name="theme-color" content="#ff4d00"></meta>

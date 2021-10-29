@@ -8,7 +8,7 @@ const ProjectsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>anson's projects</title>
+        <title>Programming Projects</title>
         <meta
           property="og:title"
           content="Anson Foong's Projects"
@@ -18,6 +18,16 @@ const ProjectsPage: NextPage = () => {
           property="og:description"
           content="List of all of Anson Foong's Programming Projects"
         />
+        <meta
+          name="description"
+          content="List of all of Anson Foong's Programming Projects"
+        />
+        <meta
+          name="keywords"
+          content="Anson Foong, Dogwrench, ServiceShark, UAlbany"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="theme-color" content="#007db8"></meta>
       </Head>
       <div className="page">
         <div className={styles["projects-page-body"]}>
