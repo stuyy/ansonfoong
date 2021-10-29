@@ -3,15 +3,6 @@ import { Project } from "./types";
 export const projects: Project[] = [
   {
     id: 1,
-    title: "UAlbany Laundry",
-    description:
-      "Tracks the status of a washer or dryer, all over campus, allowing users to know when a laundry machine is available. Data is fetched from the Service Works API, in XML format. My back-end API was written in Flask, which fetches the laundry machine data and parses it to JSON, and sends it to the front-end, which was built with Ionic 4 & Angular.",
-    src: "/projects/laundry.png",
-    pathname: "ualbany-laundry",
-    technologies: ["Ionic", "Python", "Flask"],
-  },
-  {
-    id: 2,
     title: "Dogwrench",
     description:
       "Dogwrench is an on-going project started in late 2020. The idea originated from a simple Shop Management system for a client that owns a car repair shop, but then evolved into an enterprise application for customers and shop owners. Dogwrench aims to connect customers with shop owners and promote automotive services with discounts.",
@@ -19,6 +10,15 @@ export const projects: Project[] = [
     reverse: true,
     pathname: "dogwrench",
     technologies: ["React", "Angular", "Nest.js", "MySQL"],
+  },
+  {
+    id: 2,
+    title: "Image Upload",
+    description:
+      "A fun project built live on my YouTube channel to replicate an image uploading platform. Includes features such as protected-mode, where users require a password to view the content, set by the uploader. Spoiler mode, drag-and-drop, and image upload preview with an overlay.",
+    src: "/me.png",
+    pathname: "image-upload",
+    technologies: ["React", "NestJS", "MySQL"],
   },
   {
     id: 3,
@@ -38,5 +38,14 @@ export const projects: Project[] = [
     pathname: "amex-growth-hack",
     technologies: ["Flutter", "Express"],
     reverse: true,
+  },
+  {
+    id: 2,
+    title: "UAlbany Laundry",
+    description:
+      "Tracks the status of a washer or dryer, all over campus, allowing users to know when a laundry machine is available. Data is fetched from the Service Works API, in XML format. My back-end API was written in Flask, which fetches the laundry machine data and parses it to JSON, and sends it to the front-end, which was built with Ionic 4 & Angular.",
+    src: "/projects/laundry.png",
+    pathname: "ualbany-laundry",
+    technologies: ["Ionic", "Python", "Flask"],
   },
 ];
