@@ -25,8 +25,12 @@ const ProjectsPage: NextPage = () => {
             <h1>Personal Projects</h1>
           </div>
           <div className={styles["projects-content"]}>
-            {projects.map((project) => (
-              <ProjectListing project={project} />
+            {projects.map((project, index) => (
+              <ProjectListing
+                key={project.title}
+                project={project}
+                index={index}
+              />
             ))}
           </div>
         </div>

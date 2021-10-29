@@ -18,13 +18,11 @@ export type Skill = {
 };
 
 export type Project = {
-  id: number;
   title: string;
   description: string;
-  src: string;
+  image: string;
   pathname: string;
   technologies: string[];
-  reverse?: boolean;
   github?: string;
   website?: string;
 };

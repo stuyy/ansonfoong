@@ -7,15 +7,17 @@ import { useEffect, useState } from "react";
 
 export type ProjectComponentProps = {
   project: Project;
+  index: number;
 };
 
-export const ProjectListing = ({ project }: ProjectComponentProps) => {
-  const { title, src, reverse, pathname } = project;
+export const ProjectListing = ({ project, index }: ProjectComponentProps) => {
+  const { title, image, pathname } = project;
   const [visible, setVisible] = useState(false);
   const [showMore, setShowMore] = useState(false);
   const [description, setDescription] = useState(project.description);
   const [currentWidth, setCurrentWidth] = useState(0);
   const minDescription = project.description.slice(0, 100).concat("...");
+  const reverse = index % 2 === 0;
   const router = useRouter();
 
   const WIDTH_BREAKPOINT = 650;
@@ -89,7 +91,7 @@ export const ProjectListing = ({ project }: ProjectComponentProps) => {
         </div>
       </div>
       <div>
-        <Image src={src} alt={src} width="175px" height="175px" />
+        <Image src={image} alt={image} width="175px" height="175px" />
       </div>
     </div>
   );
