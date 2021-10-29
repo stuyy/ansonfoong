@@ -8,6 +8,7 @@ export const projects: Project[] = [
     image: "/projects/dogwrench.png",
     pathname: "dogwrench",
     technologies: ["React", "Angular", "Nest.js", "MySQL"],
+    website: "https://dogwrench.com",
   },
   {
     title: "Image Upload",
@@ -16,6 +17,7 @@ export const projects: Project[] = [
     image: "/me.png",
     pathname: "image-upload",
     technologies: ["React", "NestJS", "MySQL"],
+    github: "https://github.com/stuyy/image-upload-react",
   },
   {
     title: "codering.io",

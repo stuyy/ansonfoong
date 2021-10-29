@@ -68,10 +68,7 @@ export const ProjectListing = ({ project, index }: ProjectComponentProps) => {
           <p>
             {description}
             {visible && (
-              <span
-                style={{ color: "#808080", fontWeight: "bold" }}
-                onClick={toggleDescription}
-              >
+              <span className={styles.showmore} onClick={toggleDescription}>
                 {showMore ? "Show Less" : "Show More"}
               </span>
             )}
