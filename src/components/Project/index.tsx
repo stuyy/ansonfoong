@@ -1,8 +1,8 @@
 import styles from "./project.module.scss";
-import { Button } from "../Button";
-import { useRouter } from "next/dist/client/router";
-import { Project } from "../../utils/types";
 import Image from "next/image";
+import { Button } from "../Button";
+import { useRouter } from "next/router";
+import { Project } from "../../utils/types";
 import { useEffect, useState } from "react";
 
 export type ProjectComponentProps = {
