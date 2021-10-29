@@ -19,30 +19,31 @@ export const ProjectListing = ({ project }: ProjectComponentProps) => {
   const router = useRouter();
 
   const WIDTH_BREAKPOINT = 650;
+  useEffect(() => {
+    if (window.outerWidth <= WIDTH_BREAKPOINT) {
+      setVisible(true);
+      setDescription(minDescription);
+    }
+  }, []);
 
   useEffect(() => {
     setCurrentWidth(window.outerWidth);
-    const handleResize = () => {
-      const { outerWidth } = window;
-      console.log(`Current Width: ${currentWidth}\nNew Width: ${outerWidth}`);
-      setCurrentWidth(window.outerWidth);
-      if (currentWidth !== outerWidth) {
-        console.log(showMore);
-        if (outerWidth >= WIDTH_BREAKPOINT) {
-          setVisible(false);
-          setShowMore(false);
-          setDescription(project.description);
-        } else {
-          console.log("Here");
-          console.log(showMore);
-          setVisible(true);
-          setDescription(showMore ? project.description : minDescription);
-        }
-      }
-    };
+    const handleResize = () => setCurrentWidth(window.outerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [currentWidth]); // Only want state to update when Outer Width changes.
+  }, [currentWidth]);
+
+  useEffect(() => {
+    const { outerWidth } = window;
+    if (outerWidth >= WIDTH_BREAKPOINT) {
+      setVisible(false);
+      setShowMore(false);
+      setDescription(project.description);
+    } else {
+      setVisible(true);
+      setDescription(showMore ? project.description : minDescription);
+    }
+  }, [currentWidth]);
 
   const toggleDescription = () => {
     setDescription(showMore ? minDescription : project.description);
