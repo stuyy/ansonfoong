@@ -17,6 +17,13 @@
   }
   display: flex;
   margin-top: 30px;
+  @media (max-width: 1475px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    & img {
+    }
+  }
 }
 
 .about-content-paragraph {
@@ -25,5 +32,8 @@
   & p {
     margin: 0;
     font-size: 18px;
+  }
+  @media (max-width: 1475px) {
+    margin-top: 50px;
   }
 }

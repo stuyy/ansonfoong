@@ -38,3 +38,15 @@ p {
   padding: 0 150px;
   margin: 0 auto;
 }
+
+@media (min-width: 1900px) {
+  .page-body {
+    width: 1900px;
+  }
+}
+
+@media (max-width: 750px) {
+  .page-body {
+    padding: 0 50px;
+  }
+}
