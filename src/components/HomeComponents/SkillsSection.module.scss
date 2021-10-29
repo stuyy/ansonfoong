@@ -12,6 +12,8 @@
 .skills-content-container {
   width: 1150px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
   & img {
     border: 5px solid #fff !important;
   }
