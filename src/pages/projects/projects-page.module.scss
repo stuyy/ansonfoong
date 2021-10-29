@@ -2,6 +2,14 @@
   margin: 0 auto;
   width: 1000px;
   padding: 50px 0;
+  @media (max-width: 1250px) {
+    width: 90%;
+    padding: 50px 100px;
+  }
+  @media (max-width: 750px) {
+    width: 100%;
+    padding: 50px;
+  }
 }
 
 .title-container {
